@@ -1,0 +1,25 @@
+{
+  "name": "mcp-google-sheets",
+  "version": "1.0.0",
+  "description": "Serveur MCP pour Google Sheets — lecture, ecriture, creation, formatage via OAuth2",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "mcp-google-sheets": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "dev": "tsc --watch",
+    "auth": "node build/auth.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0",
+    "zod": "^3.25.0",
+    "open": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
