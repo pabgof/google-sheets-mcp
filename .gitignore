@@ -7,3 +7,4 @@ build/
 tokens.json
 credentials.json
 .claude/
+.gstack/
